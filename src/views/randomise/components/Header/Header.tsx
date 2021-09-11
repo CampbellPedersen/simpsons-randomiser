@@ -1,8 +1,5 @@
 import React from "react";
-import { Header as BaseHeader } from "../../../../components/Header/Header";
-import { SettingsIcon } from "../../../../components/Icons/SettingsIcon";
-import { ContentButton } from "../../../../components/ContentButton";
-import { Logo } from '../../../../components/Icons';
+import { ContentButton, Header as BaseHeader, Logo, SettingsIcon } from "@src/components";
 import "./Header.scss";
 
 type Props = {

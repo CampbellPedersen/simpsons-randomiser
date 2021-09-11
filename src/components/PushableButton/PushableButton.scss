@@ -1,0 +1,21 @@
+@import '../../app.scss';
+
+.pushable-button {
+  background-color: $primary-8;
+  border: 1px solid $primary-9;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 6px 2px -2px rgba($primary-9, 0.5);
+  transition: transform 0.1s, box-shadow 0.1s, background-color 0.5s;
+  font-size: 1rem;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    box-shadow: none;
+    transform: translateY(6px);
+  }
+  &:hover {
+    background-color: $primary-7;
+  }
+}

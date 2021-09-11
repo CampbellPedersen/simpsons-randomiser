@@ -1,7 +1,5 @@
 import React from "react";
-import { Header as BaseHeader } from "@src/components/Header/Header";
-import { ContentButton } from "@src/components/ContentButton";
-import { BackIcon } from "@src/components/Icons/BackIcon";
+import { BackIcon, ContentButton, Header as BaseHeader } from "@src/components";
 import "./Header.scss";
 
 type Props = {

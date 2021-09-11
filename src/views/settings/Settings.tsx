@@ -1,5 +1,5 @@
 import React from "react";
-import { useRouting } from "../../routes";
+import { useRouting } from "@src/routes";
 import { Header } from "./components/Header";
 import "./Settings.scss";
 
