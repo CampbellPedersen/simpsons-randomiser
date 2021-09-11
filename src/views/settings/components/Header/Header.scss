@@ -1,0 +1,17 @@
+@import '../../../../app.scss';
+
+.edit-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .back-button {
+    transform: translateX(0);
+    transition: transform .1s linear;
+    
+    &:hover {
+      transform: translateX(-2px);
+    }
+  }
+}

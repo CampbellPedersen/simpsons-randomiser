@@ -1,0 +1,25 @@
+@import '../../../../app.scss';
+
+.execute-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    > :not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  
+  .settings-button {
+    transform: rotate(0deg);
+    transition: transform .1s linear;
+    
+    &:hover {
+      transform: rotate(60deg)
+    }
+  }
+}

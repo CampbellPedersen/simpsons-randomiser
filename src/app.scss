@@ -1,0 +1,11 @@
+@import './scss/colors';
+@import './scss/htmlbodyroot';
+@import './scss/reset';
+@import './scss/typography';
+@import './scss/mixins';
+
+.app {
+  background-color: $base-8;
+  min-height: 150px;
+  width: 350px;
+}

@@ -1,0 +1,14 @@
+@import '../../app.scss';
+
+.circle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  color: $base-5;
+
+  &:hover {
+    filter: brightness(1.15)
+  }
+}

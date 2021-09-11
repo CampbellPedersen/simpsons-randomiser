@@ -1,0 +1,72 @@
+{
+    "name": "lineup",
+    "version": "0.1.0",
+    "description": "A browser extension that helps you manage tasks by adding them to a queue",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --config webpack.prod.js",
+        "dev": "webpack -w --config webpack.dev.js",
+        "test": "jest --config=jest.config.js",
+        "lint": "eslint --fix -c ./.eslintrc.js \"src/**/*.ts*\"",
+        "prettify": "prettier --write \"src/**/*.ts*\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CampbellPedersen/lineup.git"
+    },
+    "keywords": [
+        "react",
+        "typescript"
+    ],
+    "author": "Campbell Pedersen",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/CampbellPedersen/lineup/issues"
+    },
+    "homepage": "https://github.com/CampbellPedersen/lineup#readme",
+    "devDependencies": {
+        "@babel/core": "7.11.6",
+        "@babel/preset-env": "7.11.5",
+        "@babel/preset-typescript": "7.10.4",
+        "@types/chrome": "0.0.124",
+        "@types/jest": "26.0.14",
+        "@types/node": "14.11.8",
+        "@types/react": "16.9.52",
+        "@types/react-dom": "16.9.8",
+        "@types/react-router-dom": "5.1.8",
+        "@types/uuid": "8.3.1",
+        "@typescript-eslint/eslint-plugin": "4.4.1",
+        "@typescript-eslint/parser": "4.4.1",
+        "awesome-typescript-loader": "5.2.1",
+        "babel-core": "6.26.3",
+        "babel-jest": "26.5.2",
+        "babel-loader": "8.1.0",
+        "css-loader": "4.3.0",
+        "eslint": "7.11.0",
+        "eslint-config-prettier": "6.12.0",
+        "eslint-plugin-prettier": "3.1.4",
+        "eslint-plugin-react": "7.21.4",
+        "jest": "26.5.3",
+        "jest-css-modules": "2.1.0",
+        "node-sass": "4",
+        "prettier": "2.1.2",
+        "react-docgen-typescript-loader": "3.7.2",
+        "react-docgen-typescript-webpack-plugin": "1.1.0",
+        "sass-loader": "10.1.1",
+        "style-loader": "2.0.0",
+        "ts-jest": "26.4.1",
+        "ts-loader": "8.0.5",
+        "typescript": "4.0.3",
+        "webextension-polyfill-ts": "0.20.0",
+        "webpack": "4.41.5",
+        "webpack-cli": "3.3.10",
+        "webpack-merge": "4.2.2"
+    },
+    "dependencies": {
+        "clsx": "1.1.1",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "react-router-dom": "5.2.0",
+        "uuid": "8.3.2"
+    }
+}
