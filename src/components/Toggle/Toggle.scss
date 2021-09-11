@@ -1,0 +1,81 @@
+@import '../../app.scss';
+
+$toggle-indicator-size: 18px;
+$track-height: $toggle-indicator-size + 6;
+$track-width: $toggle-indicator-size * 2.5;
+$speed: 0.25s;
+
+.toggle {
+  align-items: center;
+  cursor: pointer;
+	border-radius: 100px;
+	display: flex;
+  font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: 16px;
+
+	&:last-of-type {
+		margin: 0;
+	}
+}
+
+.toggle-input {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+
+	&:not([disabled]):active + .toggle-track,
+	&:not([disabled]):focus + .toggle-track {
+		box-shadow: 0px 0px 0px 2px $primary-9;
+	}
+
+	&:disabled + .toggle-track {
+		cursor: not-allowed;
+		opacity: 0.7;
+	}
+}
+
+.toggle-track {
+	background: transparent;
+	border: 1px solid $primary-8;
+	border-radius: 100px;
+	display: flex;
+	height: $track-height;
+	margin-right: 12px;
+	position: relative;
+	width: $track-width;
+}
+
+.toggle-indicator {
+	align-items: center;
+	background: $primary-9;
+	border-radius: $toggle-indicator-size;
+	bottom: 2px;
+	display: flex;
+	height: $toggle-indicator-size;
+	justify-content: center;
+	left: 2px;
+	outline: solid 2px transparent;
+	position: absolute;
+	transition: $speed;
+	width: $toggle-indicator-size;
+}
+
+.toggle-input:checked + .toggle-track {
+  background: $primary-9;
+
+  .toggle-indicator {
+    background: $primary-7;
+    transform: translateX($track-width - $track-height);
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+	.toggle-track {
+		border-radius: 0;
+	}
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { Settings } from "./views/settings";
-import { Randomise } from "./views/randomise";
+import { SettingsPage } from "./views/settings";
+import { RandomisePage } from "./views/randomise";
 
 type RouteName = "Randomise" | "Settings";
 
@@ -13,11 +13,11 @@ type Route = {
 export const Routes: Record<RouteName, Route> = {
   Randomise: {
     path: "/randomise",
-    component: Randomise,
+    component: RandomisePage,
   },
   Settings: {
     path: "/settings",
-    component: Settings,
+    component: SettingsPage,
   },
 };
 
