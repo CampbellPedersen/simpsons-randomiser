@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "The Simpsons Randomiser",
     "description": "Play episodes of The Simpsons on Disney+",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "browser_action": {
         "default_icon": "icon-16.png",
         "default_popup": "index.html"
