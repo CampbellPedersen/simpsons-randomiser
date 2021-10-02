@@ -4,3 +4,4 @@ export type Episode = {
   title: string;
   contentId: string;
 }
+
